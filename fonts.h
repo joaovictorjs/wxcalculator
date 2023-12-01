@@ -5,5 +5,5 @@
 namespace Fonts {
     bool load_font();
 
-    static wxFontInfo current = wxFontInfo(20).FaceName("Space Grotesk");
+    static wxFontInfo current = wxFontInfo(12).FaceName("Poppins");
 }

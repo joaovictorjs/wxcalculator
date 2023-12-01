@@ -2,6 +2,6 @@
 
 namespace Fonts {
     bool load_font() {
-        return wxFont::AddPrivateFont("space_grotesk.ttf");
+        return wxFont::AddPrivateFont("poppins_regular.ttf");
     }
 }
