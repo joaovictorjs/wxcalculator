@@ -1,5 +1,6 @@
 #include <wx/wx.h>
 #include "fonts.h"
+#include "colours.h"
 
 class Application : public wxApp {
     public:
@@ -20,7 +21,7 @@ Window::Window() : wxFrame(
         wxDEFAULT_FRAME_STYLE ^ wxRESIZE_BORDER ^ wxMAXIMIZE_BOX
         ){
     this->SetFont(Fonts::current);
-    auto s = new wxStaticText(this, wxID_ANY, "123 ABC abc + - =");
+    this->SetBackgroundColour(Colours::background);
 }
 
 bool Application::OnInit() {
